@@ -1,0 +1,24 @@
+header{
+   background: #f6bb81;
+   
+}
+ul{
+    display: flex;
+}
+ul li{
+    padding: 10px;
+    list-style: none;
+   cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: initial;
+}
+button{
+    background:black;
+    color: white;
+}
+img{
+   color: aliceblue;
+}

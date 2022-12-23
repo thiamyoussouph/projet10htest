@@ -1,0 +1,53 @@
+ul{
+    display: flex;
+
+}
+  ul li{
+   padding: 10px;
+    list-style: none;
+}
+nav{
+    display: flex;
+   align-items: center;
+   justify-content:  space-between;
+}
+.orange{
+    background: #ee752c;
+    height: 100px;width: 40;
+    text-align: center;
+    color:aliceblue;
+
+}
+.cadre-bleu{
+    background :#034f89;
+    height: 50vh;width: 40;
+}
+#image-de-fond{
+    margin-left: 50rem;
+}
+.formulaire{
+    position: absolute;
+    background: #fff;
+    height: 300px;
+    width: 20%;
+    top: 20%;
+    margin-left: 50px;
+    
+}
+form{
+  margin: 7%;
+  margin-left: 15%;
+}
+section{
+text-align: center;
+}
+div section h1{
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+

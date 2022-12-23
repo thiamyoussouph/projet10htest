@@ -1,0 +1,25 @@
+.uneculeur{
+    background: blue;
+    display: flex;
+   justify-content:space-around;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+li:hover{
+    background: red;
+}
+nav ul  {
+   display: flex;
+
+    
+}
+
+#div1{
+    height: 45vh;
+    background: green;
+}
+  

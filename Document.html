@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html -->
+<html lang="en" data-lt-installed="true"><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Document_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Document_files/bootstrap-icons.css">
+    <link rel="stylesheet" href="./Document_files/style.css">
+    <title>Document</title>
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1088.0" data-gr-ext-installed="">
+    <!-- <div class="container"> -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-white">
+            <div class="container-fluid">
+                <div class="col-md-2 logo">
+                    <a class="navbar-brand" href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#">
+                        <img src="./Document_files/simplon_senegal.png" alt="logo" style="height: 47px;;">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="col-md-12">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-alignment">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#">Fabrique</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#">Formations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#">Partenariats</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#">Espace</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#">Entites</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#">
+                                    <i class="bi bi-search"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fr
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#">En</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <button class="contact">contact</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- </div> -->
+    <!-- <header class="navbar navbar-expand-sm navbar-light ">
+        <nav>
+            <img src="../mesimg/simplon_senegal.png" alt="ce si est le logo" class="rounded float-start navbar-brand "
+                style="height: 50px;">
+           
+            </ul>
+            <button type="button" class="navbar-toggler"data-bs-toggler="collapse" data-bs-target="navbar-content">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            <nav class="collapse navbar-collapse"id="navbar-content">
+                <ul class="navbar-nav ms-auto nav-pills ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Acceil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Farique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:#ce0033" href="#">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Partenariat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Espaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Entite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><img src="../mesimg/search.png" alt="ce si est une img"
+                                height="30"></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link active bg-danger ">Contcte</button>
+                    </li>
+                    
+            </nav>
+        </nav>
+
+    </header> -->
+
+    <div class="row  imgf ">
+
+        <h1 class=" text-center titre"> <strong> Formations</strong> </h1>
+    </div>
+    <nav class="navbar navbar-light bg-light " style="position: relative; margin-left: 67%;top: 130%;">
+        <div class="container-fluid">
+            <a class="navbar-brand"></a>
+            <form class="d-flex">
+                <input class="form-control me-0" type="search" placeholder="rechercher " aria-label="Search">
+                <button class="btn btn-danger" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+    </nav><br><br><br><br>
+    <main class="container overflow-hidden">
+        <section class="row g-4">
+            <h2 class="h2" style="color:#ce0033;">par parcour </h2>
+            <div class="barr"></div>
+            <p style="font-family: nunito sans;text-align: center;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta reiciendis praesentium doloremque
+                mollitia.
+                Fugit excepturi ipsa voluptatum,
+                laborum repudiandae quasi cupiditate minima magni rerum dolorem atque harum asperiores mollitia aliquam.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure similique necessitatibus quidem aliquid
+                incidunt, perferendis blanditiis
+                adipisci repellat distinctio rerum suscipit qui numquam nostrum ratione omnis inventore facilis
+                praesentium
+                voluptas!
+            </p>
+        </section>
+
+        <div class="row" style="bottom: 2px;">
+
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class=" btn btn-primary buton-non">
+                    <p>decouverte </p>
+                   
+                </div>
+                <div class=" btn btn-primary buton-non2">
+                    <p>initiation </p>
+                </div>
+                <div class=" btn btn-primary buton-non1">
+                    <p>metiers </p>
+                </div>
+             
+                <div class="barres">
+                    <div class=" btn btn-primary form1">
+                        <p>decouverte </p>
+                        <span class="btn btn-primary ron"><img src="./Document_files/iconDiscoverRouge.svg" alt="YY"></span>
+
+                    </div>
+                    <div class=" btn btn-primary form2">
+                        <p>initiation </p>
+                        <span class="btn btn-primary ron1">
+
+                            <img src="./Document_files/IconFemmeBlanc.svg" alt="DD">
+
+                        </span>
+                    </div>
+                    <div class="btn btn-primary form3">
+                        <p>metiers </p>
+                        <span class="btn btn-primary ron1"><img src="./Document_files/IconOrienteMetierBlanc.svg" alt="EE">
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-8 d-flex">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <div class="card text-center ">
+                            <img src="./Document_files/leadership.png" alt="JJ" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #ce0033;">communiti management</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                                    repudiandae deserunt quo nesciunt at neque cum,
+                                    eaque doloremque consequatur vero ratione quos? Et, distinctio nulla. Molestias ut
+                                    et
+                                    quis eum.</p>
+                                <a href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                                    savoir plus</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card text-center ">
+                            <img src="./Document_files/leadership.png" alt="JJ" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #ce0033;">burautique</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                                    repudiandae deserunt quo nesciunt at neque cum,
+                                    eaque doloremque consequatur vero ratione quos? Et, distinctio nulla. Molestias ut
+                                    et
+                                    quis eum.</p>
+                                <a href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                                    savoir plus</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6">
+
+                        <div class="card text-center ">
+                            <img src="./Document_files/management.jpeg" alt="JJ" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #ce0033;">communiti management</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                                    repudiandae deserunt quo nesciunt at neque cum,
+                                    eaque doloremque consequatur vero ratione quos? Et, distinctio nulla. Molestias ut
+                                    et quis eum.</p>
+                                <a href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                                    savoir plus</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card text-center">
+                            <img src="./Document_files/office_ipad_main-600x300.png" alt="JJ" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:#ce0033;">burautique</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                                    repudiandae deserunt quo nesciunt at neque cum,
+                                    eaque doloremque consequatur vero ratione quos? Et, distinctio nulla. Molestias ut
+                                    et quis eum.</p>
+                                <a href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                                    savoir plus</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="afficher-plus ">
+                <p> <strong>afficher plus --&gt; </strong> </p>
+            </div>
+           
+        </div>
+        <div class="row" style="margin-top: 2%;">
+            <p class="h2" style="color: #ce0033;">par public</p>
+            <div class="barr1"></div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae architecto minima odio nobis quos
+            eligendi
+            accusamus, recusandae blanditiis iusto nisi omnis est dolore. Numquam exercitationem a sint totam
+            cumque nam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum officia, provident nobis
+            rerum aperiam
+            ea atque ad, molestiae officiis iusto repudiandae dolorum sed quasi hic doloremque. Placeat,
+            laboriosam eos.
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+              
+            
+                <div class=" btn btn-primary buton-non3">
+                    <p>kids </p>
+                   
+                </div>
+                <div class=" btn btn-primary buton-non4">
+                    <p>femmme  </p>
+                </div>
+                <div class=" btn btn-primary buton-non5">
+                    <p>push </p>
+                </div>
+                <div class=" btn btn-primary buton-non6">
+                    <p>reffugie</p>
+                </div>
+             
+                <div class="barres">
+                    <div class=" btn btn-primary form1">
+                        <p>femmme </p>
+                        <span class="btn btn-primary ron"><img src="./Document_files/IconFemmeRouge.svg" alt="rr"></span>
+
+                    </div>
+                    <div class=" btn btn-light form3">
+                        <p style="color: aliceblue;">kids </p>
+                        <span class="btn btn-primary ron1">
+                            <img src="./Document_files/IconKidsblanc.svg" alt="SS">
+                        </span>
+                    </div>
+                    <div class=" btn btn-primary form2">
+                        <p>push </p>
+                        <span class="btn btn-primary ron1">
+                            <img src="./Document_files/IconPshblanc.svg" alt="JJ">
+                        </span>
+                    </div>
+                    <div class="btn btn-primary form4">
+                        <p>reffugie</p>
+                        <span class="btn btn-primary ron1">
+                            <img src="./Document_files/IconrefugieBlanc.svg" alt="HH"></span>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- <div class="col-12 col-md-6">
+                    <div class="card text-center ">
+                        <img src="../mesimg/office_ipad_main-600x300.png" alt="JJ" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #ce0033;">burautique</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                                repudiandae deserunt quo nesciunt at neque cum,
+                                eaque doloremque consequatur vero ratione quos? Et, distinctio nulla. Molestias ut et
+                                quis eum.</p>
+                            <a href="#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                                savoir plus</a>
+                        </div>
+                    </div>
+
+                </div> -->
+
+            <div class="col-12 col-md-8 d-flex">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <div class="card text-center ">
+                            <img src="./Document_files/leadership.png" alt="JJ" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #ce0033;">communiti management</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                                    repudiandae deserunt quo nesciunt at neque cum,
+                                    eaque doloremque consequatur vero ratione quos? Et, distinctio nulla. Molestias ut
+                                    et
+                                    quis eum.</p>
+                                <a href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                                    savoir plus</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card text-center">
+                            <img src="./Document_files/leadership.png" alt="JJ" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #ce0033;">burautique</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                                    repudiandae deserunt quo nesciunt at neque cum,
+                                    eaque doloremque consequatur vero ratione quos? Et, distinctio nulla. Molestias ut
+                                    et
+                                    quis eum.</p>
+                                <a href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                                    savoir plus</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6">
+
+                        <div class="card text-center ">
+                            <img src="./Document_files/management.jpeg" alt="JJ" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #ce0033;">communiti management</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                                    repudiandae deserunt quo nesciunt at neque cum,
+                                    eaque doloremque consequatur vero ratione quos? Et, distinctio nulla. Molestias ut
+                                    et quis eum.</p>
+                                <a href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                                    savoir plus</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card text-center">
+                            <img src="./Document_files/office_ipad_main-600x300.png" alt="JJ" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:#ce0033;">burautique</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                                    repudiandae deserunt quo nesciunt at neque cum,
+                                    eaque doloremque consequatur vero ratione quos? Et, distinctio nulla. Molestias ut
+                                    et quis eum.</p>
+                                <a href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                                    savoir plus</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="afficher-plus">
+            <p> <strong>afficher plus --&gt; </strong> </p>
+        </div>
+
+        <div class="row" style="margin-top: 2%;">
+            <p class="h2" style="color: #ce0033;">en Partenariat</p>
+            <div class="barr2"></div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae architecto minima odio nobis quos
+            eligendi
+            accusamus, recusandae blanditiis iusto nisi omnis est dolore. Numquam exercitationem a sint totam
+            cumque nam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum officia, provident nobis
+            rerum aperiam
+            ea atque ad, molestiae officiis iusto repudiandae dolorum sed quasi hic doloremque. Placeat,
+            laboriosam eos.
+        </div>
+
+
+        <div class="row d-flex ">
+            <div class="col-sm-12 col-md-6 col-lg-4  mt-3">
+                <div class="card  text-center me-4 mb-4 ">
+                    <p class="card-header bg-danger  couleur" style="color:white;">
+                        Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Corporis totam deserunt numquam sunt
+                        officia id ad, reiciendis eius, sint soluta ea impedit repudiandae nihil!</p>
+                    <div class="card-body position-relative">
+                        <div class="triangle"></div>
+
+                        <img src="./Document_files/log.png" alt="" class="card-title">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus perferendis
+                            consectetur
+                            quia sunt suscipit labore iusto id itaque in explicabo! Perspiciatis quisquam
+                            dignissimos sint recusandae omnis totam dolorum, officiis consectetur!
+                            of the card's content.</p>
+                        <a href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                            savoir plus</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4  mt-3">
+                <div class="card  text-center me-4 mb-4 ">
+                    <p class="card-header bg-danger  couleur" style="color:white;">
+                        Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Corporis totam deserunt numquam sunt
+                        officia id ad, reiciendis eius, sint soluta ea impedit repudiandae nihil!</p>
+                    <div class="card-body position-relative">
+                        <div class="triangle"></div>
+                        <img src="./Document_files/unknown.png" alt="" class="card-title">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus perferendis
+                            consectetur
+                            quia sunt suscipit labore iusto id itaque in explicabo! Perspiciatis quisquam
+                            dignissimos sint recusandae omnis totam dolorum, officiis consectetur!
+                            of the card's content.</p>
+                        <a href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                            savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4  mt-3">
+                <div class="card  text-center me-4 mb-4 ">
+                    <p class="card-header bg-danger  couleur" style=" color:white;">
+                        Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Corporis totam deserunt numquam sunt
+                        officia id ad, reiciendis eius, sint soluta ea impedit repudiandae nihil!</p>
+
+                    <div class="card-body position-relative">
+                        <div class="triangle "></div>
+                        <img src="./Document_files/log.png" alt="" class="card-title">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus perferendis
+                            consectetur
+                            quia sunt suscipit labore iusto id itaque in explicabo! Perspiciatis quisquam
+                            dignissimos sint recusandae omnis totam dolorum, officiis consectetur!
+                            of the card's content.</p>
+                        <a href="https://thiamyoussouph.github.io/maquette-simplon-/youssouph/index.html#" class="btn btn-primary" style="background-color:#ce0033;BORDER-RADIUS :50px;">en
+                            savoir plus</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="afficher-plus">
+            <p> <strong>afficher plus --&gt; </strong> </p>
+        </div>
+
+
+
+    </main>
+    <footer class="container-fluid page-footer ">
+        <div class="row imgfond">
+            <div class="col-12 col-md-3 ">
+                <img src="./Document_files/logo-simplon.jpg.svg" alt="hh" style="height: 20%;margin-top: 2rem;">
+                <div class="row " style="margin-top:2% ">
+                    <div class="col-1"><img src="./Document_files/twitter.svg" alt="i,h" style="height:22px"></div>
+                    <div class="col-1"><img src="./Document_files/facebook.svg" alt="i,h" style="height:22px"></div>
+                    <div class="col-1"><img src="./Document_files/instagram.svg" alt="i,h" style="height:22px"></div>
+                    <div class="col-1"><img src="./Document_files/youtube-icon.svg" alt="i,h" style="height:22px"></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3" style="color:white;">
+                <h2>savoir plus</h2>
+                <p>
+
+                    A propos <br>
+                    Notre histoire <br>
+                    Condition d’utilisation <br>
+                    Politique de confidentialité <br>
+                </p>
+            </div>
+            <div class="col-12 col-md-3" style="color: white;">
+                <h2>coordonnees</h2>
+                <p>
+
+                    Cité keur Goor Gi <br>
+                    Dakar, Sicap, Libeté 2 <br><br>
+                    Senegalsimplon@email.com
+                    help@simplon.comb <br>
+                    (221) 77 456 78 90
+                    (221) 77 654 32 10</p>
+            </div>
+            <div class="col-12 col-md-3" style="color: white;">
+                <h2>Notre Newsletter</h2>
+                <p>
+
+                    Souscrivez-vous à notre newsletter pour ne manquer aucune de nos activités</p>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-danger" type="submit" style="margin-left: -6pt;">joindre</button>
+                </form>
+            </div>
+        </div>
+
+
+    </footer>
+    <div class="container-fluid">
+        <div class="row bg">
+            <div class="col-3">© 2021 Simplon. All rights reserved</div>
+            <div class="col-2 offset-7 ">Made with <img src="./Document_files/heart-fill.svg" alt="k"> by Simplons
+            </div>
+        </div>
+    </div>
+    <script src="./Document_files/bootstrap.min.js.téléchargement"></script>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

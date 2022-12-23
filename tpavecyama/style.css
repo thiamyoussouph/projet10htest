@@ -1,0 +1,46 @@
+body{
+    background:#f6bb81;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+   cursor: pointer; 
+}
+nav ul{
+    display: flex;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: inherit;
+}
+button{
+    background: black;
+    color: white;
+    width:50% px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+border-radius: 5%;
+
+}
+button p{
+    padding: 40px;
+    
+}
+button:hover{
+    background: red;
+    color: white;
+}
+.bagniere{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.bagniere div{
+   padding: 20px;
+}
+
